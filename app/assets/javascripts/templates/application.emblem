@@ -1,0 +1,13 @@
+header#ember-header
+  == partial "layouts/header-layout"
+  
+main#ember-main.off-canvas-wrap
+  .inner-wrap
+    aside.right-off-canvas-menu== outlet "right-menu"
+    section.main-section== outlet
+
+footer#ember-footer
+  == partial "layouts/footer-layout"
+
+section#ember-modal
+  == outlet "modal"

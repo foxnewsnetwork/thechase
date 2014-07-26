@@ -1,0 +1,13 @@
+.sticky
+  nav.top-bar
+    ul.title-area
+      li.name
+        == outlet "header"
+      li.menu-icon.toggle-topbar
+        a.action.pointer click="openRightMenu" class="align-right"
+          i.fa-navicon.fa.fa-lg
+    section.top-bar-section
+      ul.right
+        li
+          a.action.pointer click="openRightMenu" class="align-right"
+            i.fa-navicon.fa.fa-lg

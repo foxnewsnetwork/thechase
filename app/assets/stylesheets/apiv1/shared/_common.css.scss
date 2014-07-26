@@ -1,0 +1,109 @@
+@mixin apiv1-shared-common {
+  .fixed-dead-center {
+    @include translateY(-50%);
+    position: relative;
+    top: 50%;
+  }
+  .body-textarea {
+    height: 240px;
+  }
+  .possessive:after {
+    content: "'s ";
+  }
+  .prespace:before {
+    content: " ";
+  }
+  .margin-puffed {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  .unmargined-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .color-flare {
+    color: #d9534f;
+  }
+  .color-lagoon {
+    color: #5bc0de;
+  }
+  .color-sunflower {
+    color: #f0ad4e;
+  }
+  .color-death {
+    color: lighten(#000, 20%);
+  }
+  .color-life {
+    color: #5cb85c;
+  }
+  .align-right {
+    text-align: right;
+  }
+  .align-center {
+    text-align: center;
+  }
+  .align-left {
+    text-align: left;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .colon:after {
+    content: ":";
+  }
+  .ellipsis:after {
+    content: "...";
+  }
+  .hidden {
+    display: none;
+  }
+  .comma:not(:last-child) {
+    &:after {
+      content: ",";
+    }
+  }
+  .tab {
+    margin-right: 15px; 
+  }
+  .dash:after {
+    content: " - ";
+  }
+  .spacebar:after {
+    content: " ";
+  }
+  .predash:before {
+    content: " - ";
+  }
+  .pound:after {
+    content: '#';
+  }
+  .ellipsis {
+    text-overflow: ellipsis;
+  }
+  .parantheses:after {
+    content: ")";
+  }
+  .parantheses:before {
+    content: "(";
+  }
+  .italic {
+    font-style: italic;
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+  .upcase {
+    text-transform: uppercase;
+  }
+  .overflow-225 {
+    width: 225px;
+    text-overflow: ellipsis;
+    display: inline-block;
+  }
+  .invisible {
+    visibility: hidden;
+  }
+}

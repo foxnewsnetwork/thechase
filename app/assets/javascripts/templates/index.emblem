@@ -1,0 +1,27 @@
+.row
+  .small-centered.small-6.column
+    ul.small-block-grid-3
+      li
+        span.capitalize.bold choice mode
+      li
+        .switch.large.round
+          input type="radio"
+          label chase run
+      li
+        span.capitalize.bold run mode
+
+.row
+  .small-10.column.small-centered
+    .th
+      img src="images/duck.jpg"
+
+.row
+  .small-offset-3.small-2.column.align-left
+    a.pointer.button.round.expand.alert
+      i.fa.fa-2x.fa-times
+  .small-2.column.align-center
+    a.pointer.button.round.expand.secondary
+      i.fa.fa-2x.fa-info
+  .small-2.column.end.align-right
+    a.pointer.button.round.expand.success
+      i.fa.fa-2x.fa-check
